@@ -1,0 +1,332 @@
+:root{
+    --green:#009a38;
+    --white:#fff;
+    --paddingCero:padding:0px!important;
+
+}
+@font-face {
+    font-family: GothamBold;
+    src: url(../fonts/GothamBold.woff);
+}
+@font-face {
+    font-family: GothamMedium;
+    src: url(../fonts/GothamMedium.woff);
+}
+
+body{
+    font-family: GothamMedium!important;
+}
+.br-5{
+    border-radius: 5px!important;
+}
+.bg-primary{
+    background-color:var(--green) ;
+}
+.bg-secundary{
+    background-color:var(--white) ;
+}
+.bg-primary:hover{
+    background-color:var(--white)!important ;
+}
+.bg-secundary:hover{
+    background-color:var(--green)!important ;
+    color: var(--white)!important;
+}
+.flex-center{
+    display: flex; align-items: center;justify-content: center;
+}
+.flex-center-right{
+    display: flex; align-items: center;justify-content: right;
+}
+.flex-center-left{
+    display: flex; align-items: center;justify-content: left;
+}
+.w-100{width: 100%;}
+.p-absolute{position: absolute;}
+.text-w{color: white;}
+.close{
+    font-size: 40px;
+    height: 100%;
+    line-height: 20px;
+    float: left;
+}
+.main-header-landing .sidebar-toggle:before {
+    content: "\f0c9";
+    font-size: 21px;
+    color: #b6b6b6;
+}
+.main-header-landing .sidebar-toggle {
+    float: left;
+    background-color: transparent;
+    background-image: none;
+    padding: 15px 15px;
+    font-family: fontAwesome;
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    height: 70px;
+    color: lightgray;
+}
+.main-header-landing {
+    position: relative;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+    padding:var(--paddingCero);
+}
+.main-header-landing > .navbar {
+    background-color: #fff;
+    margin-bottom: 0;
+    margin-left: 0px;
+    border: none;
+    height: 70px;
+    border-radius: 0;
+    padding: 0% 4%;
+}
+.menu-landing{
+    height: 100%;
+    position: relative;
+    top: 0px;
+    background-color: #fbfbfb;
+    max-width: 600px;
+    float: right;
+}
+.menu-landing a{
+    font-family: GothamMedium;
+    width: 130px;
+    margin: 0px 0px 0px 20px;
+    border: 1px solid var(--green);
+}
+.navbar-landing{
+    height: 100%;
+}
+.cont-img-80{
+    width: 50%;
+}
+.cont-info-aldia{
+    width: 50%;
+    position: relative;
+}
+.cont-empty{
+    width: 50%;
+}
+.cont-info-accede{
+    width: 50%;
+}
+.img-80{
+    width: 100%;
+    padding: 0% 13% 0% 0%;
+}
+.box-aldia{
+    display: flex;
+    padding: 5% 4% 4% 4%;
+}
+.box-aldia div{
+    padding: var(--paddingCero);
+}
+.box-info-aldia{
+    bottom: 0px;
+    right: 0px;
+    text-align: right;
+}
+.box-info-aldia p{
+ color: var(--white);
+ font-size: 24px;
+}
+.box-info-aldia a{
+    color:var(--green);
+    font-family: GothamBold;
+}
+.box-info-accede a {
+    color: var(--green);
+    font-family: GothamBold;
+}
+.box-accede{
+    display: flex;
+    padding: 5% 4%;
+}
+.box-accede div{
+    padding: var(--paddingCero);
+}
+.box-info-accede p{
+    color: var(--white);
+    font-size: 24px;
+}
+.box-info-accede p:nth-child(1){
+    line-height: 44px;
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+.box-info-accede{
+    text-align: right;
+}
+ footer{
+     background-color: var(--white);
+     display: flex;
+     padding: 1% 4%;
+ }
+ footer p{
+    color:#636765;
+ }
+ footer p:nth-child(1){
+    font-family: GothamBold;
+ }
+
+ /*animation hover icons*/
+.animation-landing:hover{
+    -webkit-animation: swing 1s ease;
+          animation: swing 1s ease;
+          -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  }
+  @-webkit-keyframes swing
+  {
+      5%
+      {
+          -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+      }
+      50%
+      {
+          -webkit-transform: translateX(-5px);
+         transform: translateX(-5px);
+      } 
+      100%
+      {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+      }
+  }
+  @keyframes swing
+  {
+    5%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+  }
+
+ @media (min-width: 1600px) {
+    .box-info-aldia p {
+        font-size: 40px;
+    }
+    .btnNavSup {
+        font-size: 22px
+    }
+    .main-header-landing > .navbar {
+        height: 100px;
+    }   
+ }
+
+ @media (max-width: 1000px) {
+    .box-aldia{
+      padding: 5% 3% 2% 3%;
+    }
+    .box-accede {
+        padding: 5% 3% 2% 3%; 
+    }
+    .box-info-aldia p{  
+        font-size: 20px;
+    }
+    .main-header-landing > .navbar {
+        padding: 0% 3%;     
+    }
+ }
+ .hidden-landing-large{display: none;}
+ .visible-landiing-large{display: block;}
+ @media (max-width: 768px) {
+    .box-info-accede p:nth-child(1) {
+        line-height: 35px;
+    }
+   
+ }
+ @media (max-width: 450px) {
+    .hidden-landing-large{display: block;}
+    .visible-landiing-large{display: none;}
+    .menu-landing a{
+        width: auto;
+    }
+    .img-responsive-one{
+       z-index: -1;
+    }
+    .img-responsive-two{
+        z-index: -1;
+     }
+    .cont-img-80{
+        width: 100%;
+    }
+    .cont-info-aldia{
+        width: 100%;
+        position: relative;
+    }
+    .cont-info-accede{
+        width: 100%; 
+    }
+    .main-header-landing > .navbar{
+        padding: 0% 4%;
+    }
+     .w-sm{
+        width: 100%;
+        padding: 0px;
+     }
+    .img-80 {
+      width: 100%;
+      padding: 50px;
+      z-index: 1;
+    }
+    .box-info-aldia{
+    left: 0px;
+    text-align: center;
+
+    }
+    .box-info-aldia p {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+    .box-info-aldia a{
+        margin-bottom: 10px;
+        padding: 1.5% 17%;
+        
+    }
+    .height-100-resp {
+        height: 100%;
+    }
+    .box-aldia{
+        display: block;
+        padding: 0% 4%;
+        height: 100%;
+    }
+    .box-accede{
+        display: block;
+        padding: 0% 4%;
+        bottom: 13%;
+        z-index: 1;
+    }
+    .flex-center-left{justify-content: center;padding: 0px;}
+    .flex-center-right{justify-content: center;padding: 0px;}
+    footer{
+        text-align: center;
+        padding: 4% 0%;
+        display:block;
+        
+    }
+    .section-two{
+        display: block;
+        position: relative;
+    }
+
+ }
